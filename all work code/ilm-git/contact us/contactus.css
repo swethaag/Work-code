@@ -1,0 +1,28 @@
+@media (max-width: 327px){
+
+.website-link{
+   
+    margin-left: -40% !important;
+
+}
+.website-link .svg-mail {
+    text-align: center !important;
+}
+}
+@media (max-width: 304px){
+
+    .website-link{
+       
+        margin-left: -70% !important;
+    
+    }
+}
+@media (max-width: 285px){
+
+    .website-link{
+       
+        margin-left: -100% !important;
+    
+    }
+}
+

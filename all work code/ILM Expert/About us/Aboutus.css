@@ -1,0 +1,23 @@
+.official_text{
+    color: #7D50C7;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+.about-des{
+  font-size: 18.5px;
+
+}
+.card-bg-pink{
+  background-color: #E20E97;
+}
+.card-heading{
+  font-size: 50px;
+
+}
+.card-bg-yellow{
+  background-color: #E2C30E;
+}
+.card-bg-green{
+  background-color: #0EE259;
+}

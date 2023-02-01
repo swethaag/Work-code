@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.timeline{
+    width: 100%;
+    max-width: 850px;
+    padding: 20px 30px;
+    margin: 20px auto;
+    background-color: #fff;
+    position: relative;
+}
+.block img{
+    width: 100px;
+}
+.blocks::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+    border-left: 2px dotted #555;
+}
+.block{
+    width: calc(50% - 20px);
+    margin: 40px 0;
+    border: px solid #eee;
+    padding: 10px 15px;
+    position: relative;
+}
+#block2::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1999ce;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    top: 0;
+    right: -30px;
+}
+#block1::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(199, 90, 90);
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    top: 0;
+    right: -30px;
+}
+#block3::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(92, 40, 249);
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    top: 0;
+    right: -30px;
+}
+#block4::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    top: 0;
+    right: -30px;
+}
+.block:nth-child(even){
+    left: calc(50% + 20px);
+}
+.block:nth-child(even)::before{
+    left: -31px;
+}
+
+header p{
+    position: absolute;
+    padding: 3px 8px;
+    
+}
+.block:nth-child(odd) header p{
+    right: -215px;
+    top: 0;
+}
+.block:nth-child(even) header p{
+    left: -215px;
+    top: 0;
+}
+
+/* responsive */
+@media (max-width: 630px){
+    .timeline::before{
+        left: 20px;
+        transform: translateX(0);
+    }
+    .blocks::before{
+        left: 30px;
+        transform: translateX(0);
+    }
+    .blocks{
+        padding-left: 20px;
+    }
+    .block{
+        width: 100%;
+    }
+    .block::before, .block:nth-child(even){
+        left: -30px;
+    }
+    .block:nth-child(even){
+        left: 0;
+    }
+    header p{
+        position: static;
+        border: none;
+        margin-bottom: 10px;
+    }
+}

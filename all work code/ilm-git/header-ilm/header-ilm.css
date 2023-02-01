@@ -1,0 +1,40 @@
+.bg-color-official{
+background-color: #7D50C7;
+
+}
+body{
+font-family: 'Playfair Display', serif;
+}
+.navbar-nav{
+margin-right: 0 !important;
+
+}
+.font-libre{
+font-family: 'Franklin Gothic Thin', 'Arial Narrow', Arial, sans-serif;
+}
+
+.official_text{
+color: #7D50C7;
+}
+.sign-in{
+background-color: #5828A7;
+border-radius: 100px;
+}
+.btn-radius{
+border-radius: 80px;
+}
+.logo{
+width: 200px;
+}
+.dropdown-item:hover{
+background-color: #7D50C7;
+color: #fff;
+
+}
+@media (max-width: 991px){
+
+.register-btn{
+margin-top: 5px;
+}
+
+}

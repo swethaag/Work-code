@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.box-container{
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+}
+.box-1{
+    margin-left: 5%;
+    
+}
+.box-1 h1{
+    font-size: 15px;
+    
+}
+.box-1 h2{
+    font-size: 15px;
+    
+}
+.footer h1{
+    font-size: 15px;
+}
+.footer h2{
+    font-size: 15px;
+    margin-top: 5%;
+}
+.footer p{
+    font-size: 14px;
+}
+.box-2{
+    border: px solid black;
+    display: flex;
+    margin-left: 5%;
+    gap: 5%;
+    width: 100%;
+}
+.box{
+    display: flex;
+    margin-top: 2%;
+}
+.social-media img{
+    height: 20px;
+    width: 20px;
+
+}
+.underline{
+    border: 0px solid yellow;
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+/* .copyright-paymet{ 
+    border: px solid olivedrab;
+   display: flex;
+  
+   width: 90%;
+   margin-left: 5%;
+   margin-bottom: 1%;
+   gap: 30%;
+
+}
+
+.copyright h3{
+    font-size: 11px;
+    color: #888;
+  
+}
+.text-icons .payment-text a{
+    font-size: 12px;
+    color: #888;
+    text-decoration: none;
+    
+}
+.text-icons{
+    border: px solid red;
+   
+/* } */
+.copyright-paymet{
+    border: px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+}
+.copy{
+    border: px solid blue;
+}
+.copyright{
+    font-size: 11px;
+}
+.copyright h3{
+    color: #888;
+}
+.text-icons{
+   
+    font-size: 11px;
+}
+.text-icons .payment-text a{
+    color: #888;
+   
+    text-decoration: none;
+}
+.payment-icons img{
+    height: 10px;
+    width: 20px;
+  
+}
+@media all and (max-width:780px){
+    .box{
+        flex-direction: column;
+    }
+    .box-2{
+        flex-direction: column;
+        border: px solid red;
+        width: 90%;
+    }
+    .copyright-paymet{
+        flex-direction: column;
+    }
+}
+

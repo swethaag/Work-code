@@ -1,0 +1,17 @@
+
+ 
+img{
+    width: 350px;
+}
+.parallax{
+    background: url("i.png")
+    repeat fixed 100%;
+}
+.parallax-inner{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.official_text{
+    color: #0E2DE2;
+}
+/* Hover button */

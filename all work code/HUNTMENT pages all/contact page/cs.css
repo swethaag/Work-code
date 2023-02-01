@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  /* justify-content: right; */
+  min-height: 100vh;
+  /* padding: 40px; */
+  padding: 0!important;
+  flex-direction: column;
+  overflow-x: hidden;
+  
+}
+/* header{
+  padding: 0 20px;
+  margin: 0;
+} */
+header, footer{
+  flex-shrink: 0;
+  padding: 0;
+ margin: 0;
+}
+main{
+  flex-grow: 1;
+}
+.parent_container{
+  /* background-color: yellow; */
+  /*width: 100vw;*/
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* border: 0px solid red; */
+
+}
+.container-1{
+  min-height: 60vh;
+  box-shadow: 0px 0px 10px #1999ce;
+  border-radius: 0.5rem;
+  min-width: 30vw;
+  margin: 0 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text h1{
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 1500;
+}
+.text p{
+  font-size: 2.3rem;
+  font-weight: 1500;
+  text-align: center;
+  color: #1999ce;
+}
+.container-2{
+  width: 60vw;
+  border: 0px solid #1999ce;
+  border-radius: 0.5rem;
+  padding-bottom: 50px;
+  /* box-shadow: 0px 0px 10px #1999ce; */
+}
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.container-2 form{
+  padding: 4rem 20px;
+  width: 100%;
+  display: grid;
+  /* background-color: yellow; */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0 3rem;
+}
+.container form input{
+  width: 70%;
+  height: 2.3rem;
+  box-sizing: border-box;
+  outline:none;
+  border: none;
+  border-bottom: 2px solid #1999ce
+}
+.inp{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  /* margin-bottom: 2rem; */
+  /* background: yellow; */
+}
+textarea, input{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #1999ce;
+}
+.submit-button{
+  margin-left: 80%;
+ 
+}
+.sub_btn{
+  background-color: #1999ce;
+  color: #fff;
+  
+  padding: 10px 30px;
+  border: 0px solid #1999ce;
+}
+.map_loc{
+  border: 2px solid #1999ce;
+  margin-top:1rem;
+
+}
+@media(max-width: 710px){
+  .parent_container{
+    flex-direction: column;
+  }
+}
+
+/* 
+.container-1{
+    border: 2px solid red;
+    /* max-width: 500px; */
+    /* left: 1%;
+    background-color: #fff;
+    width: 500px; 
+     padding: 100px 10px 100px 10px;
+    position: absolute;
+   
+    box-shadow: 0px 0px 10px #1999ce;
+} */
+/* .container-1 .text h3{
+    font-size: 48px;
+    left: 10%;
+    top: 40px;
+    position: absolute;
+    
+}
+.container-1 .text  p{
+    font-size: 48px;
+    left: 10%;
+    top: 85px;
+    position: relative;
+    margin-bottom: 5%;
+    color: #1999ce;
+
+}
+.container{
+  border: 2px solid blue;
+  min-width: 800px;
+  margin-top: -2%;
+  background: #fff;
+  width: 1000px;
+  
+  
+}
+.container .text{
+ 
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+
+  
+}
+.container form{
+  padding: 30px 0 0 0;
+}
+.container form .form-row{
+  display: flex;
+  margin: 52px 0;
+  padding: 10px;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #1999ce;
+}
+.textarea textarea{
+  resize: none;
+ 
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+  left: 75%;
+ 
+ 
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+ 
+  border: none;
+  color: #fff;
+  background-color: #1999ce;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+} */ 
+/* @media all and (max-width: 1360px){
+  .container-1{
+    top: 1%;
+   
+   
+  }
+  .container{
+    margin-top: 20%;
+  }
+
+} */
+/* 
+@media all and (max-width:571px){
+  .container{
+    margin-top: 60%;
+  }
+  .submit-btn .input-data{
+    width: 100%!important;
+
+  }
+
+}
+@media all and (max-width: 500px){
+  .container{
+    margin-top: 100%;
+   
+  }
+  .submit-btn .input-data{
+    width: 100%!important;
+
+  }
+  .container-1{
+    padding-bottom: 10px;
+  }
+  .container-1 .text h3{
+    font-size: 45px;
+    left: 10%;
+    top: 0px;
+    position: absolute;
+    border: 0px solid red;
+    
+}
+.container-1 .text p{
+  top: 15px;
+  left: 8%;
+}
+
+}
+@media all and (max-width:960px){
+  .container{
+    margin-top: 40%;
+  }
+
+} 
